@@ -46,7 +46,8 @@ class _HomeState extends State<Home> {
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f62763cd-03e0-44aa-a4f5-0535c76d2eaf/sportswear-essential-bodysuit-tank-2s9QdC.png',
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/36d0f151-a9cc-4adf-8bf6-25d9f5eb2d3a/sportswear-essential-bodysuit-tank-2s9QdC.png',
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/e0230dcd-2910-4906-89b9-001136eef774/sportswear-essential-bodysuit-tank-2s9QdC.png',
-        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/71169557-0931-4633-9113-6590c79c409d/sportswear-essential-bodysuit-tank-2s9QdC.png'
+        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/71169557-0931-4633-9113-6590c79c409d/sportswear-essential-bodysuit-tank-2s9QdC.png',
+        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6ba4599d-b0e2-444e-9115-2b54a13ca840/nikecourt-dri-fit-slam-dress-ND5bnT.png'
       ],
       rating: 5.0,
       sold: 234,
@@ -63,7 +64,8 @@ class _HomeState extends State<Home> {
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a382d3df-0752-4399-b98e-a082cc8bea4d/sportswear-club-t-shirt-G2qXCD.png',
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/85bb872f-a4ae-405f-ac9b-bc84fa85760a/sportswear-club-t-shirt-G2qXCD.png',
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/123f3126-58dc-4ea9-a834-d31edd38a18b/sportswear-club-t-shirt-G2qXCD.png',
-        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/6599b224-5b3a-4274-b423-16d4eaaa2cda/sportswear-club-t-shirt-G2qXCD.png'
+        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/6599b224-5b3a-4274-b423-16d4eaaa2cda/sportswear-club-t-shirt-G2qXCD.png',
+        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6ba4599d-b0e2-444e-9115-2b54a13ca840/nikecourt-dri-fit-slam-dress-ND5bnT.png'
       ],
       rating: 4.6,
       sold: 112,
@@ -80,7 +82,8 @@ class _HomeState extends State<Home> {
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/ac494efc-0dce-4e84-99ad-e1cd046ccdcf/nikecourt-dri-fit-slam-dress-ND5bnT.png',
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6ba4599d-b0e2-444e-9115-2b54a13ca840/nikecourt-dri-fit-slam-dress-ND5bnT.png',
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/dc7a8095-4630-414e-8198-a7fe9d5f4257/nikecourt-dri-fit-slam-dress-ND5bnT.png',
-        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/7aa8fdfc-f3f0-4941-a455-dc7552e6e90a/nikecourt-dri-fit-slam-dress-ND5bnT.png'
+        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/7aa8fdfc-f3f0-4941-a455-dc7552e6e90a/nikecourt-dri-fit-slam-dress-ND5bnT.png',
+        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6ba4599d-b0e2-444e-9115-2b54a13ca840/nikecourt-dri-fit-slam-dress-ND5bnT.png'
       ],
       rating: 2.1,
       sold: 20,
@@ -97,7 +100,8 @@ class _HomeState extends State<Home> {
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/1ed04118-0fb5-4d11-aeb3-d9a5762d4c34/sportswear-tech-fleece-hoodie-kC99j3.png',
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/521e7cca-7269-4cdc-bd56-9e6df888f7e2/sportswear-tech-fleece-hoodie-kC99j3.png',
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0a02de66-a637-44eb-aa3e-30d3839cb036/sportswear-tech-fleece-hoodie-kC99j3.png',
-        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/bf216b56-85f5-4ac6-99aa-23f5f84e4262/sportswear-tech-fleece-hoodie-kC99j3.png'
+        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/bf216b56-85f5-4ac6-99aa-23f5f84e4262/sportswear-tech-fleece-hoodie-kC99j3.png',
+        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6ba4599d-b0e2-444e-9115-2b54a13ca840/nikecourt-dri-fit-slam-dress-ND5bnT.png'
       ],
       rating: 3.9,
       sold: 300,
@@ -374,7 +378,13 @@ class _HomeState extends State<Home> {
                         sold: data.sold,
                         tap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => const ProductDetail()));
+                              builder: (context) => ProductDetail(
+                                    image: data.image,
+                                    images: data.images,
+                                    title: data.title,
+                                    sold: data.sold,
+                                    rate: data.rating,
+                                  )));
                         },
                       );
                     },
