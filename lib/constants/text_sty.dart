@@ -24,6 +24,14 @@ var reg3 = GoogleFonts.sourceSansPro(
       letterSpacing: .5),
 );
 
+var reg4 = GoogleFonts.sourceSansPro(
+  textStyle: const TextStyle(
+      color: Color(0xff569C86),
+      fontSize: 12,
+      fontWeight: FontWeight.bold,
+      letterSpacing: .5),
+);
+
 var hev1 = GoogleFonts.sourceSansPro(
   textStyle: const TextStyle(
       color: Color(0xff494A59),
@@ -43,6 +51,14 @@ var hev2 = GoogleFonts.sourceSansPro(
 var hev3 = GoogleFonts.sourceSansPro(
   textStyle: const TextStyle(
       color: Color(0xff494A59),
+      fontSize: 30,
+      fontWeight: FontWeight.w900,
+      letterSpacing: .5),
+);
+
+var hev4 = GoogleFonts.sourceSansPro(
+  textStyle: const TextStyle(
+      color: Color(0xff569C86),
       fontSize: 30,
       fontWeight: FontWeight.w900,
       letterSpacing: .5),

@@ -4,7 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'package:moniepointtest/constants/text_sty.dart';
 
+import '../models/product_model.dart';
 import '../widgets/action_icons.dart';
+import '../widgets/product_widget.dart';
 import '../widgets/rate_widget.dart';
 
 class ProductDetail extends StatefulWidget {
@@ -12,7 +14,9 @@ class ProductDetail extends StatefulWidget {
   final List images;
   final String title;
   final double rate;
+  final double price;
   final int sold;
+  final List<ProductData> data;
 
   const ProductDetail({
     Key? key,
@@ -20,7 +24,9 @@ class ProductDetail extends StatefulWidget {
     required this.images,
     required this.title,
     required this.rate,
+    required this.price,
     required this.sold,
+    required this.data,
   }) : super(key: key);
 
   @override
@@ -828,17 +834,429 @@ class _ProductDetailState extends State<ProductDetail>
               height: 30,
             ),
 
-            //r and r with images
-
             //top rerviews
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Top Reviews:",
+                        style: hev2,
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        "Showing 3 of 2.3k+ reviews",
+                        style: reg1,
+                      ),
+                    ],
+                  ),
+                  // const SizedBox(
+                  //   width: 30,
+                  // ),
+                  TextButton(
+                    onPressed: () {},
+                    style: TextButton.styleFrom(
+                      // foregroundColor: Colors.white,
+//                       side: const BorderSide(
+//                         color: Color(0xff569C86),
+// // Set your desired border color here
+//                         width: 2.0,
+//                       ),
+                      backgroundColor: Colors.grey[200],
+
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                    child: Row(
+                      children: [
+                        Text(
+                          // "Check this out",
+                          "Popular",
+                          style: hev2,
+                        ),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        const Icon(
+                          Icons.keyboard_arrow_down,
+                          size: 18,
+                          color: Colors.grey,
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
 
             //comments
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          const CircleAvatar(
+                            radius: 18,
+                            backgroundImage:
+                                AssetImage("assets/images/placehold.png"),
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            "Levi**Aren",
+                            style: hev2,
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          const Icon(
+                            Icons.star,
+                            size: 18,
+                            color: Color(0xffEEA551),
+                          ),
+                          const SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            "5.0",
+                            style: hev2,
+                          ),
+                          const SizedBox(
+                            width: 5,
+                          ),
+                          const Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 2,
+                                backgroundColor: Colors.grey,
+                              ),
+                              SizedBox(
+                                width: 2,
+                              ),
+                              CircleAvatar(
+                                radius: 2,
+                                backgroundColor: Colors.grey,
+                              ),
+                              SizedBox(
+                                width: 2,
+                              ),
+                              CircleAvatar(
+                                radius: 2,
+                                backgroundColor: Colors.grey,
+                              ),
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    children: [
+                      Chip(
+                        label: Text(
+                          "faucibus pellentesque.",
+                          style: reg4,
+                        ),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(
+                              20), // Adjust the value to increase the border radius
+                        ),
+                        backgroundColor: Colors.green.withOpacity(0.2),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      Chip(
+                        label: Text(
+                          "pellentesque.",
+                          style: reg4,
+                        ),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(
+                              20), // Adjust the value to increase the border radius
+                        ),
+                        backgroundColor: Colors.green.withOpacity(0.2),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      Chip(
+                        label: Text(
+                          "faucibus.",
+                          style: reg4,
+                        ),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(
+                              20), // Adjust the value to increase the border radius
+                        ),
+                        backgroundColor: Colors.green.withOpacity(0.2),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "Sed vitae elit laoreet, imperdiet sem ut.",
+                    style: hev2,
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: const Icon(
+                              Icons.thumb_up_alt,
+                              color: Color(0xff569C86),
+                            ),
+                          ),
+                          Text(
+                            "Helpful ?",
+                            style: reg2,
+                          )
+                        ],
+                      ),
+                      Text(
+                        "Yesterday",
+                        style: reg1,
+                      )
+                    ],
+                  )
+                ],
+              ),
+            ),
+
+            const SizedBox(
+              height: 30,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Divider(
+                height: 1,
+                color: Colors.grey[300],
+              ),
+            ),
+
+            const SizedBox(
+              height: 30,
+            ),
 
             //pagination
-
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(Icons.keyboard_arrow_left),
+                      ),
+                      Text(
+                        "1",
+                        style: reg1,
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        "2",
+                        style: reg1,
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        "3",
+                        style: reg1,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(Icons.keyboard_arrow_right),
+                      )
+                    ],
+                  ),
+                  Text(
+                    "See more",
+                    style: reg2,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
             //recommendation
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Recommendation",
+                    style: hev2,
+                  ),
+                  Text(
+                    "See more",
+                    style: reg2,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
 
-            //buy now
+            //recom
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: 250,
+              margin: EdgeInsets.only(bottom: 50),
+              child: ListView.builder(
+                // physics: const NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
+                scrollDirection: Axis.horizontal,
+                itemCount: widget.data.length,
+                itemBuilder: (BuildContext context, int index) {
+                  ProductData data = widget.data[index];
+
+                  return Container(
+                    width: 200,
+                    margin: EdgeInsets.only(right: 10),
+                    child: Product(
+                      title: data.title,
+                      image: data.image,
+                      category: data.category,
+                      price: data.price,
+                      rate: data.rating,
+                      sold: data.sold,
+                      tap: () {
+                        // Navigator.of(context).push(MaterialPageRoute(
+                        //     builder: (context) => ProductDetail(
+                        //           image: data.image,
+                        //           images: data.images,
+                        //           title: data.title,
+                        //           sold: data.sold,
+                        //           rate: data.rating,
+                        //           price: data.price,
+                        //         )));
+                      },
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        // color: Colors.white,
+        surfaceTintColor: Colors.white,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(
+              children: [
+                Text(
+                  "Total price",
+                  style: reg1,
+                ),
+                Text(
+                  "\$${widget.price}",
+                  style: hev4,
+                ),
+              ],
+            ),
+            Container(
+              height: 60,
+              width: 180,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                // color: Colors.amber,
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      height: 60,
+                      width: 180,
+                      decoration: const BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(10),
+                          bottomLeft: Radius.circular(10),
+                        ),
+                        color: Color(0xff569C86),
+                      ),
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          FaIcon(
+                            FontAwesomeIcons.bagShopping,
+                            color: Colors.white,
+                            size: 25,
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            "1",
+                            style: TextStyle(color: Colors.white, fontSize: 18),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      height: 60,
+                      width: 180,
+                      decoration: const BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(10),
+                          bottomRight: Radius.circular(10),
+                        ),
+                        color: Color(0xff494A59),
+                      ),
+                      child: const Center(
+                        child: Text(
+                          "Buy Now",
+                          style: TextStyle(color: Colors.white, fontSize: 18),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),

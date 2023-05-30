@@ -384,6 +384,8 @@ class _HomeState extends State<Home> {
                                     title: data.title,
                                     sold: data.sold,
                                     rate: data.rating,
+                                    price: data.price,
+                                    data: productData,
                                   )));
                         },
                       );
